@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #ffe6f0, #fce4ec);
+  color: #333;
+}
+
+header {
+  background-color: #ffb6c1;
+  padding: 20px;
+  text-align: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ea6f9a;
+}
+
+.intro {
+  text-align: right; /* or center if you want */
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ffc0cb;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #ff69b4;
+}
+
+section {
+  padding: 40px;
+}
+
+.about, .skills, .contact {
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #d63384;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background: #ffe6f0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #d63384;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;      /* Keeps button only as wide as the content */
+  align-self: flex-start;  /* Aligns to the left of the form */
+}
+
+button:hover {
+  background-color: #ad2e6f;
+}
